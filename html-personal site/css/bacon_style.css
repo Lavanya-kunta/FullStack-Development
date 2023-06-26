@@ -1,0 +1,27 @@
+/*------------tag selector--------*/
+h1{
+  color :red;
+  font-size:100px;
+}
+img:hover{
+  background-color:gold;
+}
+/* -----class selector-----*/
+.bacon{
+    background-color:red;
+  }
+.onion{
+  background-color:green;
+}
+.circular{
+  border-radius:100%;
+}
+/*---id selector----*/
+/*hear tag selector h1 override with  id selector*/
+#heading{
+  color:blue;
+}
+/* invalid b/c more then one id tags in one html element
+#big{
+  font-size:100px;
+}*/

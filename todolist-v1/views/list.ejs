@@ -1,0 +1,71 @@
+
+<%- include("header") -%>
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> To Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+
+-->
+
+     <!--<h1> It is a <%= listTitle %> </h1> -->
+<!--<%if(listTitle==="Saturday" || listTitle==="Sunday"){ %>
+      <h1 style="color:purple"><%= listTitle%> ToDo List</h1>
+  <%  }  else{ %>
+      <h1 style="color:blue"><%= listTitle%> ToDo List</h1>
+    <%  } %> -->
+  <!-- <h1><%= listTitle %> </h1> -->
+<div class="box" id="heading">
+  <h1><%= listTitle %> </h1>
+</div>
+<!--
+<ul>
+  <li> Buy Food</li>
+  <li> Cook Food</li>
+  <li> Eat Food</li>
+  -->
+  <!-- ><li>< %= newListItem %></li>   //it add all items in one line so use loop <-->
+
+
+<!--
+ <ul>
+  <% for(var i=0;i<newListItems.length;i++){ %>
+  <li><%= newListItems[i] %></li>
+  <% } %>
+
+</ul>
+-->
+<div class="box">
+    <% for(var i=0;i<newListItems.length;i++){ %>   <!-- hear instead of adding bullet poit adding checkbox -->
+      <div class="item">
+        <input type="checkbox">
+        <p><%= newListItems[i] %></p>
+      </div>
+    <% } %>
+    <form class="item" action="/" method="post">
+      <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+  <!--    <button type="submit"  name="button" >+</button> -->
+    <button type="submit"  name="list" value=<%=listTitle %>>+</button>
+    </form>
+</div>
+
+<!--
+<form class="" action="/" method="post">
+  <input type="text" name="newItem">
+  <button type="submit"  name="button">Add</button>
+</form>
+-->
+  <!-- </body>
+
+  <footer>
+    copright 2023 the app brewery
+  </footer>
+</html>
+
+-->
+
+<%- include("footer") -%>

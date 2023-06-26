@@ -1,0 +1,23 @@
+/*p{
+  background-color:red;
+}*/
+/*p{
+  background-color:red;
+  width:100px;
+  display:inline;
+}*/
+p{
+  background-color:red;
+  width:100px;
+  display:inline-block;
+}
+.lav{
+//  display:none; //nothing is display: block;
+ visibility:hidden;//not visible
+
+}
+span{
+  display:block;
+  background-color:blue;
+  width:100px;
+}

@@ -1,0 +1,37 @@
+<%- include("partials/header") -%>
+
+<h1>Home</h1>
+<div>
+  <p> <%= startingContent %> </p>
+</div>
+<% console.log(postcontent); %>
+<!--%  for(var i=0;i<postcontent.length;i++){ % -->
+  <!--%  console.log(postcontent[i].title); %-->
+<!--%  } %-->
+<!-- using forEach for loop -->
+<% postcontent.forEach(function(post){ %>
+<!--%  console.log(post.title); % -->
+  <h1><%=post.title %></h1>
+  <p><%=post.content.substring(0,100)+" ..." %>
+    <a href="/posts/<%=post.title%>">Read More</a>
+  </p>
+<% }); %>
+
+<%- include("partials/footer")  -%>
+
+
+
+
+<!-- truncating string
+
+function truncateText(1,100){
+  var element=document.querySelector(1),
+      truncated=element.innerText;
+
+  if(truncated.length>100){
+    truncated=truncated.substr(0,100) + "...";
+  }
+  return truncated;
+}
+document.querySelector('p').innerText=truncateText('p',107);
+-->
